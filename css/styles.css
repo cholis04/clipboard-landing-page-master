@@ -29,7 +29,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 2.4em;
+  padding: 0 1.2em;
   width: 100%;
   max-width: 1440px;
 }
@@ -39,6 +39,7 @@ p {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.6em;
+  font-size: 0.82em;
 }
 
 h2,
@@ -49,8 +50,14 @@ h6 {
   color: var(--dark-grayish-blue);
 }
 
-.download-link {
+h2 {
   margin: 2rem auto;
+  text-align: center;
+}
+
+.download-link {
+  margin: 2.4rem auto;
+  padding: 0 1em;
   width: 100%;
   min-height: 100px;
   display: flex;
@@ -79,6 +86,13 @@ h6 {
   box-shadow: 0 25px 15px -6px hsla(233, 100%, 69%, 0.1);
 }
 
+main > div > section > p {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+  padding: 0 1.6em;
+}
+
 /* HEADER ######################################################################## */
 
 header {
@@ -104,16 +118,66 @@ header > div > section {
 }
 header > div > section > h1 {
   color: hsl(240, 7%, 24%);
+  padding: 0 1em;
   font-weight: 600;
   text-align: center;
   margin-bottom: 1.4rem;
 }
 header > div > section > p {
-  font-size: 0.82em;
+  padding: 0 1.6em;
   text-align: center;
 }
 
 /* HEADER ######################################################################## */
+
+/* MAIN CONTENT ######################################################################## */
+
+/* ## FEATURE ################ */
+main div section.feature {
+  margin-bottom: 10rem;
+}
+main div section.feature > div.feature-list {
+  margin-top: 3.6rem;
+  display: flex;
+  flex-direction: column;
+}
+main div section.feature > div.feature-list > .image-wrapper {
+  margin-bottom: 3.6rem;
+}
+main div section.feature > div.feature-list > .image-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+main div section.feature > div.feature-list > ul {
+  list-style-type: none;
+}
+main div section.feature > div.feature-list > ul > li {
+  margin-bottom: 2.6rem;
+  text-align: center;
+}
+main div section.feature > div.feature-list > ul > li > h3 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+main div section.feature > div.feature-list > ul > li > p {
+  padding: 0 2em;
+}
+/* ## FEATURE ################ */
+
+/* ## SYNC ################ */
+main div section.sync > .image-wrapper {
+  margin: 4rem auto;
+  width: 100%;
+  max-width: 860px;
+}
+main div section.sync > .image-wrapper > img {
+  width: 100%;
+}
+/* ## SYNC ################ */
+
+/* MAIN CONTENT ######################################################################## */
 
 /* ############################################# DESKTOP ######################################### */
 /* ############################################# DESKTOP ######################################### */
@@ -140,6 +204,19 @@ header > div > section > p {
     opacity: 0.75;
   }
 
+  /* Typography */
+  h2 {
+    font-size: 1.9em;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  main > div > section > p {
+    padding: unset;
+  }
+  /* Typography */
+
   /* HEADER ######################################################################## */
   header {
     background-image: url('../images/bg-header-desktop.png');
@@ -155,11 +232,57 @@ header > div > section > p {
     font-size: 2.4em;
   }
   header > div > section > p {
+    padding: unset;
     margin: 0 auto;
     max-width: 680px;
     font-size: 1.1em;
   }
   /* HEADER ######################################################################## */
+
+  /* MAIN ######################################################################## */
+
+  /* ### FEATURE ######################################################################## */
+  main div section.feature > div.feature-list {
+    margin-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main div section.feature > div.feature-list > .image-wrapper {
+    width: 50%;
+    position: relative;
+    min-width: 360px;
+    margin-bottom: 0;
+  }
+  main div section.feature > div.feature-list > .image-wrapper > img {
+    transform: scale(115%) translateX(-6%);
+    position: relative;
+  }
+  main div section.feature > div.feature-list > ul {
+    flex-grow: 1;
+  }
+  main div section.feature > div.feature-list > ul > li {
+    text-align: left;
+    margin: 4rem auto;
+  }
+  main div section.feature > div.feature-list > ul > li > h3,
+  main div section.feature > div.feature-list > ul > li > p {
+    max-width: 500px;
+    padding-left: 16%;
+  }
+  main div section.feature > div.feature-list > ul > li > p {
+    font-size: 0.9em;
+  }
+  /* ### FEATURE ######################################################################## */
+
+  /* ### SYNC ######################################################################## */
+  main div section.sync > .image-wrapper {
+    margin: 6rem auto;
+  }
+  /* ### SYNC ######################################################################## */
+
+  /* MAIN ######################################################################## */
 }
 
 /* ############# MY SOLUTION CSS ################ */
