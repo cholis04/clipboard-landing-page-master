@@ -177,6 +177,35 @@ main div section.sync > .image-wrapper > img {
 }
 /* ## SYNC ################ */
 
+/* ## TOOLS ################ */
+main div section.tools {
+  margin-top: 6rem;
+}
+main div section.tools > .tool-list {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+main div section.tools > .tool-list > article {
+  margin: 1rem auto;
+}
+main div section.tools > .tool-list > article > .icon-wrapper {
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div section.tools > .tool-list > article > h3 {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+main div section.tools > .tool-list > article > p {
+  text-align: center;
+  padding: 0 1.4em;
+}
+/* ## TOOLS ################ */
+
 /* MAIN CONTENT ######################################################################## */
 
 /* ############################################# DESKTOP ######################################### */
@@ -241,7 +270,7 @@ main div section.sync > .image-wrapper > img {
 
   /* MAIN ######################################################################## */
 
-  /* ### FEATURE ######################################################################## */
+  /* ## FEATURE ######################################################################## */
   main div section.feature > div.feature-list {
     margin-top: 7rem;
     width: 100%;
@@ -274,13 +303,37 @@ main div section.sync > .image-wrapper > img {
   main div section.feature > div.feature-list > ul > li > p {
     font-size: 0.9em;
   }
-  /* ### FEATURE ######################################################################## */
+  /* ## FEATURE ######################################################################## */
 
-  /* ### SYNC ######################################################################## */
+  /* ## SYNC ######################################################################## */
   main div section.sync > .image-wrapper {
     margin: 6rem auto;
   }
-  /* ### SYNC ######################################################################## */
+  /* ## SYNC ######################################################################## */
+
+  /* ## TOOLS ######################################################################## */
+  main div section.tools {
+    margin-bottom: 10rem;
+  }
+  main div section.tools > .tool-list {
+    margin: 4rem auto;
+    max-width: 1120px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  main div section.tools > .tool-list > article {
+    margin: 0 auto;
+    width: calc(calc(1 / 3) * 100%);
+  }
+  main div section.tools > .tool-list > article > h3 {
+    font-size: 1.3em;
+    margin-top: 2rem;
+  }
+  main div section.tools > .tool-list > article > p {
+    font-size: 0.9em;
+    padding: 0 0.2em;
+  }
+  /* ## TOOLS ######################################################################## */
 
   /* MAIN ######################################################################## */
 }
