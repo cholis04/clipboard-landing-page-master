@@ -11,6 +11,8 @@
   /* NEUTRAL */
   --dark-grayish-blue: hsl(210, 10%, 33%);
   --grayish-blue: hsl(201, 11%, 66%);
+  /* Footer Background */
+  --footer-background: hsl(220, 18%, 97%);
 }
 
 * {
@@ -213,6 +215,7 @@ main div.company {
   justify-content: center;
   align-items: center;
   margin-bottom: 10rem;
+  overflow-y: auto;
 }
 main div.company > img {
   margin: 2.2rem auto;
@@ -229,6 +232,53 @@ main div section.download > p {
 /* ## DOWNLOAD ################ */
 
 /* MAIN CONTENT ######################################################################## */
+
+/* FOOTER ######################################################################## */
+footer {
+  background-color: var(--footer-background);
+}
+footer div.footer {
+  padding: 2.6em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div.footer > div.logo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div.footer > div.logo > img {
+  width: 100%;
+  max-width: 50px;
+}
+
+footer div.footer > nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div.footer > nav.page-link > ul > li {
+  margin: 0.5rem auto;
+}
+footer div.footer > nav.page-link > ul > li > a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+footer div.footer > nav.social-link {
+  margin-top: 2.4rem;
+}
+footer div.footer > nav.social-link > ul {
+  flex-direction: row;
+  justify-content: center;
+}
+footer div.footer > nav.social-link > ul > li {
+  margin: 0 1rem;
+}
+/* FOOTER ######################################################################## */
 
 /* ######################################################### DESKTOP ###3#################################################### */
 /* ######################################################### DESKTOP ###3#################################################### */
@@ -363,7 +413,11 @@ main div section.download > p {
     margin: 0 auto;
     max-width: 1200px;
     flex-direction: row;
-    margin-bottom: 10rem;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+  main div.company > img {
+    margin: 1rem;
   }
 
   /* ## COMPAnY ######################################################################## */
@@ -375,6 +429,51 @@ main div section.download > p {
   /* ## DOWNLOAD ######################################################################## */
 
   /* MAIN ######################################################################## */
+
+  /* FOOTER ######################################################################## */
+  footer div.footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer div.footer > div.logo {
+    margin-bottom: 0;
+    width: 18%;
+    justify-content: flex-start;
+  }
+  footer div.footer > div.logo > img {
+    max-width: 60px;
+  }
+  footer div.footer > nav.page-link {
+    flex-grow: 1;
+  }
+  footer div.footer > nav.page-link > ul {
+    max-width: 560px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer div.footer > nav.page-link > ul > li {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  footer div.footer > nav.page-link > ul > li > a {
+    font-size: 1em;
+  }
+
+  footer div.footer > nav.social-link {
+    margin-top: 0;
+  }
+  footer div.footer > nav.social-link > ul > li {
+    margin: 0 0;
+    margin-left: 1rem;
+  }
+  /* FOOTER ######################################################################## */
 }
 
 /* ############# MY SOLUTION CSS ################ */
