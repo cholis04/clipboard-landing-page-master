@@ -1,2 +1,165 @@
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
+
+/* ############# MY SOLUTION CSS ################ */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
+
+:root {
+  /* PRIMARY */
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  /* NEUTRAL */
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: none;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 2.4em;
+  width: 100%;
+  max-width: 1440px;
+}
+
+p {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-grayish-blue);
+}
+
+.download-link {
+  margin: 2rem auto;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.download-link > a {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 50px;
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--strong-cyan);
+  box-shadow: 0 25px 15px -6px hsla(171, 66%, 44%, 0.1);
+}
+.btn-secondary {
+  background-color: var(--light-blue);
+  box-shadow: 0 25px 15px -6px hsla(233, 100%, 69%, 0.1);
+}
+
+/* HEADER ######################################################################## */
+
+header {
+  background-color: #ffffff;
+  background-image: url('../images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+header > div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header > div > .logo {
+  margin-bottom: 3rem;
+}
+header > div > section {
+  width: 100%;
+}
+header > div > section > h1 {
+  color: hsl(240, 7%, 24%);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+header > div > section > p {
+  font-size: 0.82em;
+  text-align: center;
+}
+
+/* HEADER ######################################################################## */
+
+/* ############################################# DESKTOP ######################################### */
+/* ############################################# DESKTOP ######################################### */
+/* ############################################# DESKTOP ######################################### */
+/* ############################################# DESKTOP ######################################### */
+/* ############################################# DESKTOP ######################################### */
+/* ############################################# DESKTOP ######################################### */
+/* ############################################# DESKTOP ######################################### */
+
+@media only screen and (min-width: 680px) {
+  /* Downlaod Link */
+  .download-link {
+    margin: 1rem auto;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .download-link > a {
+    margin: 0 0.5rem;
+    width: unset;
+    font-size: 0.9em;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .download-link > a:hover {
+    opacity: 0.75;
+  }
+
+  /* HEADER ######################################################################## */
+  header {
+    background-image: url('../images/bg-header-desktop.png');
+    background-position: top center;
+  }
+  header > div {
+    min-height: 90vh;
+  }
+  header > div > .logo {
+    margin-top: 4rem;
+  }
+  header > div > section > h1 {
+    font-size: 2.4em;
+  }
+  header > div > section > p {
+    margin: 0 auto;
+    max-width: 680px;
+    font-size: 1.1em;
+  }
+  /* HEADER ######################################################################## */
+}
+
+/* ############# MY SOLUTION CSS ################ */
