@@ -313,6 +313,7 @@ footer div.footer > nav.social-link > ul > li > a {
   /* Typography */
   h2 {
     font-size: 1.9em;
+    margin: 1rem auto;
   }
   p {
     font-size: 1em;
@@ -329,13 +330,14 @@ footer div.footer > nav.social-link > ul > li > a {
     background-position: top center;
   }
   header > div {
-    min-height: 90vh;
+    min-height: 84vh;
   }
   header > div > .logo {
     margin-top: 4rem;
   }
   header > div > section > h1 {
     font-size: 2.4em;
+    margin-bottom: 1rem;
   }
   header > div > section > p {
     padding: unset;
@@ -348,8 +350,11 @@ footer div.footer > nav.social-link > ul > li > a {
   /* MAIN ######################################################################## */
 
   /* ## FEATURE ######################################################################## */
+  main div section.feature {
+    margin-top: 3rem;
+  }
   main div section.feature > div.feature-list {
-    margin-top: 7rem;
+    margin-top: 5rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -362,7 +367,7 @@ footer div.footer > nav.social-link > ul > li > a {
     margin-bottom: 0;
   }
   main div section.feature > div.feature-list > .image-wrapper > img {
-    transform: scale(115%) translateX(-6%);
+    transform: scale(105%) translateX(-3%);
     position: relative;
   }
   main div section.feature > div.feature-list > ul {
@@ -385,11 +390,13 @@ footer div.footer > nav.social-link > ul > li > a {
   /* ## SYNC ######################################################################## */
   main div section.sync > .image-wrapper {
     margin: 6rem auto;
+    margin-bottom: 4rem;
   }
   /* ## SYNC ######################################################################## */
 
   /* ## TOOLS ######################################################################## */
   main div section.tools {
+    margin-top: 1rem;
     margin-bottom: 8rem;
   }
   main div section.tools > .tool-list {
@@ -419,7 +426,7 @@ footer div.footer > nav.social-link > ul > li > a {
     max-width: 1200px;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
   }
   main div.company > img {
     margin: 1rem 2rem;
@@ -428,6 +435,9 @@ footer div.footer > nav.social-link > ul > li > a {
   /* ## COMPAnY ######################################################################## */
 
   /* ## DOWNLOAD ######################################################################## */
+  main div section.download {
+    margin-bottom: 7rem;
+  }
   main div section.download > p {
     padding: 0 0;
   }
@@ -438,7 +448,7 @@ footer div.footer > nav.social-link > ul > li > a {
   /* FOOTER ######################################################################## */
   footer div.footer {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1100px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
