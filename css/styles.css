@@ -1,6 +1,3 @@
-/* .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); } */
-
 /* ############# MY SOLUTION CSS ################ */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
 
@@ -284,6 +281,18 @@ footer div.footer > nav.social-link > ul > li > a {
   align-items: center;
 }
 /* FOOTER ######################################################################## */
+
+/* ATTRIBTUION ######################################################################## */
+.attribution {
+  background-color: rgb(29, 29, 29);
+  padding: 2rem 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 80%, 81%);
+}
+/* ATTRIBTUION ######################################################################## */
 
 /* ######################################################### DESKTOP ###3#################################################### */
 /* ######################################################### DESKTOP ###3#################################################### */
